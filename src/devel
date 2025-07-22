@@ -1,0 +1,56 @@
+#!/bin/bash
+#
+# Development tool for Dinoco Motors
+
+# Compile Project
+
+function compile {
+        javac -d bin/ Exception/*.java Gui/*.java Data/*.java Main.java
+}
+
+# Run Project
+
+function run {
+        cd bin/
+        java -cp .:/usr/share/java/mysql-connector-java.jar Main "$@"
+}
+
+# Update To-Do
+
+function update_todo {
+        grep -r -n "TODO" > to_do.txt
+        mv to_do.txt ..
+}
+
+# Update ctags
+
+function update_tags {
+        ctags -R . --languages=java
+        mv tags ..
+}
+
+# TODO: Update Test Data stored in Data.tsv
+
+# Main Function
+
+function main {
+        if [[ "$1" == "run" ]]; then
+                run
+        elif [[ "$1" == "todo" ]]; then
+                update_todo
+        elif [[ "$1" == "compile" ]]; then
+                compile
+        elif [[ "$1" == "tags" ]]; then
+                update_tags
+        else
+                echo "Invalid Option..."
+                echo "-----------------"
+                echo "Valid Options: "
+                echo "run"
+                echo "compile"
+                echo "todo"
+                echo "tags"
+        fi
+}
+
+main "$@"

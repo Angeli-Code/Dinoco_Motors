@@ -19,6 +19,7 @@ public class Main
 		dataList = db.downloadDatabase();
 
 		GUIManager guiMan = new GUIManager();
+        //TODO: Have GUIManager create these frames.. not here
 		MenuFrame menuFrame = new MenuFrame(guiMan,
 						    null,
 						    null,
@@ -52,6 +53,7 @@ public class Main
 		if (args[0].equals("--debug")) {
 			return true;
 		} else {
+            // FIXME: Should dev know about incorrect flag usage?
 			return false;
 		}
 	}

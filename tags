@@ -29,11 +29,11 @@
 !_TAG_PARSER_VERSION!Java	0.0	/current.age/
 !_TAG_PARSER_VERSION!Sh	0.0	/current.age/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
-!_TAG_PROC_CWD	/home/dark/Programming/College/CISC-191/Final-Project/src/	//
+!_TAG_PROC_CWD	/home/dark/Programming/Dinoco_Motors/src/	//
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
-!_TAG_PROGRAM_VERSION	6.0.0	//
+!_TAG_PROGRAM_VERSION	6.1.0	//
 !_TAG_ROLE_DESCRIPTION!Java!package	imported	/imported package/
 !_TAG_ROLE_DESCRIPTION!Sh!heredoc	endmarker	/end marker/
 !_TAG_ROLE_DESCRIPTION!Sh!script	loaded	/loaded/
@@ -67,7 +67,7 @@ accelerationField	Gui/SliderFrame.java	/^	private JTextField accelerationField;$
 accelerationSlider	Gui/SliderFrame.java	/^	private JSlider accelerationSlider;$/;"	f	class:SliderFrame	file:
 actionPerformed	Gui/MenuFrame.java	/^	public void actionPerformed(ActionEvent event)$/;"	m	class:MenuFrame
 actionPerformed	Gui/SearchFrame.java	/^	public void actionPerformed(ActionEvent event)$/;"	m	class:SearchFrame
-addLabelAndComponents	Gui/SliderFrame.java	/^	private void addLabelAndComponents(String labelText, JSlider slider,$/;"	m	class:SliderFrame	file:
+addLabelAndComponents	Gui/SliderFrame.java	/^	private void addLabelAndComponents(String labelText, JSlider slider, JTextField field, int yPos/;"	m	class:SliderFrame	file:
 carName	Data/Car.java	/^	private String carName;$/;"	f	class:Car	file:
 carNameField	Gui/SearchFrame.java	/^	private JTextField carNameField;$/;"	f	class:SearchFrame	file:
 checkDebugMode	Main.java	/^	public static boolean checkDebugMode(String[] args) {$/;"	m	class:Main
@@ -75,6 +75,7 @@ clearDatabase	Data/Database.java	/^	public void clearDatabase()$/;"	m	class:Data
 closeConnection	Data/Database.java	/^	public void closeConnection()$/;"	m	class:Database
 closeFrame	Gui/GUIManager.java	/^	public void closeFrame(MainFrame frame)$/;"	m	class:GUIManager
 closeFrame	Gui/MainFrame.java	/^	public void closeFrame()$/;"	m	class:MainFrame
+compile	devel	/^function compile {$/;"	f
 connection	Data/Database.java	/^	private Connection connection;$/;"	f	class:Database	file:
 createSlider	Gui/SliderFrame.java	/^	private JSlider createSlider(int min, int max, int initial)$/;"	m	class:SliderFrame	file:
 createStyledButton	Gui/MenuFrame.java	/^	private JButton createStyledButton(String text)$/;"	m	class:MenuFrame	file:
@@ -117,6 +118,7 @@ logger	Gui/MenuFrame.java	/^	private Logger logger = Logger.getLogger(MenuFrame.
 logger	Gui/SearchFrame.java	/^	private Logger logger = Logger.getLogger(SearchFrame.class.getName());$/;"	f	class:SearchFrame	file:
 logger	Gui/SliderFrame.java	/^	private Logger logger = Logger.getLogger(SliderFrame.class.getName());$/;"	f	class:SliderFrame	file:
 main	Main.java	/^	public static void main(String[] args)$/;"	m	class:Main
+main	devel	/^function main {$/;"	f
 menuButton	Gui/SearchFrame.java	/^	private JButton menuButton;$/;"	f	class:SearchFrame	file:
 menuButton	Gui/SliderFrame.java	/^	private JButton menuButton;$/;"	f	class:SliderFrame	file:
 menuFrame	Gui/SearchFrame.java	/^	private MenuFrame menuFrame;$/;"	f	class:SearchFrame	file:
@@ -131,6 +133,7 @@ origin	Data/Car.java	/^	private String origin;$/;"	f	class:Car	file:
 parseTSV	Data/Parser.java	/^	public ArrayList<Car> parseTSV()$/;"	m	class:Parser
 resultsArea	Gui/SearchFrame.java	/^	private JTextArea resultsArea;$/;"	f	class:SearchFrame	file:
 resultsArea	Gui/SliderFrame.java	/^	private JTextArea resultsArea;$/;"	f	class:SliderFrame	file:
+run	devel	/^function run {$/;"	f
 searchButton	Gui/MenuFrame.java	/^	private JButton searchButton;$/;"	f	class:MenuFrame	file:
 searchButton	Gui/SearchFrame.java	/^	private JButton searchButton;$/;"	f	class:SearchFrame	file:
 searchFrame	Gui/MenuFrame.java	/^	private SearchFrame searchFrame;$/;"	f	class:MenuFrame	file:
@@ -156,6 +159,8 @@ updateCarList	Gui/SliderFrame.java	/^	public void updateCarList(ArrayList<Car> i
 updateDatabase	Data/Database.java	/^	public void updateDatabase()$/;"	m	class:Database
 updateResultsArea	Gui/SliderFrame.java	/^	private void updateResultsArea(ArrayList<Car> filteredCars)$/;"	m	class:SliderFrame	file:
 updateTextFields	Gui/SliderFrame.java	/^	private void updateTextFields()$/;"	m	class:SliderFrame	file:
+update_tags	devel	/^function update_tags {$/;"	f
+update_todo	devel	/^function update_todo {$/;"	f
 userName	Data/Database.java	/^	private static final String userName = "javaman";$/;"	f	class:Database	file:
 userPwd	Data/Database.java	/^	private static final String userPwd = "args";$/;"	f	class:Database	file:
 weight	Data/Car.java	/^	private String weight;$/;"	f	class:Car	file:
