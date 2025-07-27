@@ -8,18 +8,14 @@ database. The application was designed using Swing.
 
 - Java
 - MySql
-- Linux (only for the build/run scripts)
 
 ## How to build/run the program
 
-- My development environment lives on linux so all the commands will be under
-the assumption that you are on a linux machine
-- I scripted the build/run process in scripts. They are locted in the "src" dir
-- chmod +x the scripts and run them
+- Check out the 'devel' script
 
 ### Future Additions
 
-- Fix the implementation of the GUIManager class. I meant for it to have init
+- Fix the implementation of the GUIManager class. I meant for it to init
 all frames within the class. I don't know why I didn't implement it in that way
 initially.
 
